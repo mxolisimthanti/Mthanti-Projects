@@ -1,0 +1,31 @@
+/* style.css */
+
+/* Import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply Inter font family and Antialiasing */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom rounded corners for all elements (as per instructions) */
+/* This will apply a default border-radius to elements that don't have Tailwind's rounded-* classes */
+/* Tailwind classes will override this where applied, giving you fine control */
+* {
+    border-radius: 0.5rem; /* Equivalent to Tailwind's rounded-lg */
+}
+
+/* You can add any additional custom CSS here if Tailwind doesn't provide what you need */
+/* For example, specific custom animations, complex gradients, etc. */
+
+/* Basic transition for elements to smooth out visual changes */
+.transition-all-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Example of a custom shadow for cards if you want something more specific than default Tailwind shadows */
+.custom-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
